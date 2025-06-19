@@ -12,8 +12,7 @@ jobs:
           python-version: '3.11'
       - name: Install Dependencies
         run:
-          python -m pip install --upgrade pip
-          pip install PyYAML==6.0
+          python -m pip install --upgrade pip && pip install PyYAML==6.0
       - name: Run Feed Generator
         run: python feed.py
       - name: Push Repo
